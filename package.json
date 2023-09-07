@@ -1,0 +1,27 @@
+{
+  "name": "eslint-suggestions-cli",
+  "version": "1.0.0",
+  "description": "Apply all eslint suggestions from bash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "apply-suggestions": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edi9999/eslint-suggestions-cli.git"
+  },
+  "keywords": [
+    "eslint",
+    "suggestions",
+    "cli"
+  ],
+  "author": "Edgar Hipp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edi9999/eslint-suggestions-cli/issues"
+  },
+  "homepage": "https://github.com/edi9999/eslint-suggestions-cli#readme"
+}
