@@ -12,7 +12,14 @@ process.stdin.on("data", function (data) {
 });
 
 function exit() {
-	const parsed = JSON.parse(fullData);
+	let parsed;
+	try {
+		parsed = JSON.parse(fullData);
+	} catch (e) {
+		console.error("Stdin is not JSON, please use : ");
+		console.error("eslint . --format json | apply-suggestions");
+		process.exit(1)
+	}
 	parsed.forEach(function ({ filePath, messages }) {
 		let content = fs.readFileSync(filePath).toString();
 		let offset = 0;
